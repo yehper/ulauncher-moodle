@@ -1,0 +1,34 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Moodle Events",
+  "description": "View upcoming moodle events",
+  "developer_name": "Yehonathan Peretz",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "demo_kw",
+      "type": "keyword",
+      "name": "Moodle Upcoming events",
+      "description": "View Upcoming events",
+      "default_value": "me"
+    },
+    {
+      "id": "site",
+      "type": "input",
+      "name": "Moodle website URL",
+      "description": "e.g. : https://mymoodle.ac/year20",
+      "default_value": ""
+    },
+    {
+      "id": "token",
+      "type": "input",
+      "description": "get from: <moodle-url>/login/token.php?username=<username>&password=<password>&service=moodle_mobile_app",
+      "name": "Token",
+      "default_value": ""
+    }
+  ]
+}
+
