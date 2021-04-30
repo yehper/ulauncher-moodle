@@ -8,12 +8,24 @@
     "query_debounce": 0.1
   },
   "preferences": [
-    {
-      "id": "demo_kw",
+    { "id": "main_kw",
+      "type": "keyword",
+      "name": "All",
+      "description": "View Upcoming events",
+      "default_value": "me"
+    },
+    { "id": "kw_events",
       "type": "keyword",
       "name": "Moodle Upcoming events",
       "description": "View Upcoming events",
-      "default_value": "me"
+      "default_value": "eme"
+    },
+    {
+      "id": "kw_courses",
+      "type": "keyword",
+      "name": "Moodle courses",
+      "description": "View courese",
+      "default_value": "cme"
     },
     {
       "id": "site",
@@ -28,6 +40,13 @@
       "description": "get from: <moodle-url>/login/token.php?username=<username>&password=<password>&service=moodle_mobile_app",
       "name": "Token",
       "default_value": ""
+    },
+    {
+      "id": "courses_type",
+      "type": "select",
+      "options": ["Starred","All in-progress"],
+      "name": "Type of courses to view",
+      "default_value": "All in-progress"
     }
   ]
 }
