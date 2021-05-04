@@ -1,7 +1,7 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Moodle Events",
-  "description": "View upcoming moodle events",
+  "name": "Moodle",
+  "description": "View upcoming moodle events and access courses",
   "developer_name": "Yehonathan Peretz",
   "icon": "images/icon.png",
   "options": {

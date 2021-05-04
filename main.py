@@ -91,10 +91,13 @@ class MoodleEvents(Extension):
                 url = ''
             if query.lower() not in event['name'].lower():
                 continue
-            items.append(ExtensionResultItem(icon='images/icon.png',
-                                             name=f"{idn} - {event['name']}:   {time}",
-                                             on_enter=OpenUrlAction(
-                                                 url)))
+            items.append((ExtensionResultItem(icon='images/icon.png',
+                                              name=f"{idn} - {event['name']}:   {time}",
+                                              on_enter=OpenUrlAction(
+                                                  url)), event['timestart']))
+        # Sort by time
+        items.sort(key=lambda x: x[1])
+        items = [x[0] for x in items]
         if not items:
             items.append(ExtensionResultItem(icon='images/icon.png',
                                              name="Nothing to Show",
