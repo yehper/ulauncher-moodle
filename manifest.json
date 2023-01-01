@@ -24,7 +24,7 @@
       "id": "kw_courses",
       "type": "keyword",
       "name": "Moodle courses",
-      "description": "View courese",
+      "description": "View courses",
       "default_value": "cme"
     },
     {
